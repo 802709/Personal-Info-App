@@ -1,0 +1,152 @@
+<html>
+<head>
+    <style type="text/css">
+        body {
+            background-color:black;
+            color:darkmagenta;
+            text-align: center
+        }
+        div {
+            margin: 5px 25px;
+            padding: 10px;
+            border: 1px solid #3d0e4b;
+        }
+        div.longText{
+            border: 3px solid;
+        }
+        div.shortText{
+            border: 0px solid;
+        }
+        div.clicked{
+            background-color: darkgrey !important;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Personal Info App, I guess....</h1>
+    <div class = 'longText'>
+        <div>
+    <h3>Summer Stuff</h3>
+            <img src = "bluesun.jpg" width = 300>
+        </div>
+    <p>...In general, the summer was calm - defintley a relaxing time. Most weeks I didn't do anything big or extravagant - at most I visited my sister at her workplace and participated in a couple small tournaments they were hosting for a game she had gotten me interested in. I didn't see freinds all too much - I mean, it isn't suprising given my anxieties around proposing a plan, or, rather, sending the first text, making the first move. But, nonetheless, the times I saw freinds were fun occasions - I had menat to create a few more occasions, but... well, life passes you by, and thus these kinds of things just fade away. But hey - she was there in the first place - that fact alone gives a great warmth to such memories, especially nowdays when I on't see her as much. Graduation was a thing that happened after all - she has to go to college for most of the year at this point.
+    On another note, I had traveled a little bit - that much was certainly fun. We'd went up to Stradford, Canada, and saw a few theatrical performances while we were there. My favorite of the bunch would have to be the production of 'Little Shop Of Horrors' - a musical that's been around in productions for decades that invovles the gradual growth and increasing antics of a newfound villian and his manipulation of the protagonist. The thing is, though, this aforementioned villian is an otherworldy plant that feeds on human blood! Yeah, that alone gives the story a bit of an edge to it - which is something I activley enjoy. I like the breaks from fluffy normality a lot of the time.</p> 
+     
+        <div>
+        <h3> Once Again, Back at School...</h3>
+        </div>
+         <img src = "sun.jpg" width = 300>
+        <p>
+    Well...the time had come once again. As of now, I'm back at school - which is something I'm not too fond of. Over the summer I tried to avoid thinking about the upcoming school term as much as I could. That option is dead - after all, it's hard to avoid thinking about a place you have go to on a daily basis, especially one that provokes and demands thought of itself. The last few weeks of summer were tainted a bit by the impeding date - thinking too much is often the bearer of deep worry and similar such maligments. I couldn't alway avoid thinking about it, and when those thoughts stirred, a dreary melancholy followed. 
+        </p>
+        
+        <div><h3>Beyond High School...</h3></div>
+    <img src = "oof.jpg" width=200 id = "sad">
+    <p>Well...it's defintley not a subject I'm fond of talking about, that's for certain. I mean, I can't imagine there to be all that many people whp would enjoy the weight of deciding one's whole life in a few ever-fleeting years...well, life most certainly be overwhelming at times. I've always known that I'd end up going to college after gradutaion - I've never had the option to choose anything else, as even minor notions of a future without immediate college have all been shot down upon conception. So, that much is decided, which just leaves the dilema of where I should go...That's a beast of its own. It's a monstrous descision that determines the fate of the rest of life. I know it's ultimatley about the next few years, yes, but where you go to college and what you study trickle into all sorts of things further along - this decision is not in a vaccum whatsoever. It's a great weight, one hard to come to terms with. And it's a desicion put upon the shoulders of young folk, fledgings who are still learing how to fly. It's ultimatley terrfying. There's a lot to consider - obliviously there's your choice of studies and where to go, but there's also the debates of distance from home and what kind of living conditions you're signing yourself up for. Many questions spring from such debates - "Can I afford to live in a comfortable and/or safe dorm?" "Could I handle living far from home?" "Will I be okay with the people at this new place?" And then there's the extents of which you have to reach and act to make such answers into reality... It's a lot to consider. So, of course I've been thinking about it quite alot, albiet being somewhat against my will - after all, I have been and still continue to avoid thinking about the topic whenever I can.....After much forced thought, I'd ultimatley say that Bowling Green University seems ideal, given everything I have to consider in my head - everything mentioned and many other things I've left unsaid. It has a fairly good curriculim and reputation in its arts programs - those classes which I'd use to build my major...so, of course thats good. It's also not too far away, but it still allows for room to roam free, to breathe easy away from home. It...actually leaves some room to spread my wings and live on my own terms...it's a thought that evokes both great excitement and terror alike. Depite trying to look at the whole picture, I'm still left mostly unsure and unknowing of what the future may entail. Will I trive in a new enviroment, or would I essentially drown? Could I adapt to a changed world, or would I be swept away by the endless motion of the world? It keeps on going, it keeps on going. How would I get a job, and what will I end up wanting to do? Could I actually manage to find or make a living for myself? How would the cog of my workplace efforts affect where I live, or perhaps affect places even further out? Where would I want to live? Would I have the nessicary drive for life?............Yeah, it really is a lot to think about. It's too much to think about the distant future...so, I guess I'll just stick to focusing on just the next couple years, for now.
+    </p>
+        
+    </div>
+      <div class = 'shortText'>
+<script>
+  
+//        let name = "Liz Mertens"
+//        let age = 17
+        //creating an object called 'person'
+        let person = {
+            // key value pair ( key : value )
+            "firstName" : "Liz", 
+            "lastName" : "Mertens",
+            "age" : 17,
+            "Favorite Color" : "black",
+            "siblings": ["Katie"],
+            "Favorite Musical Artists": ["Twenty One Pilots", "Panic At The Disco", "Set It Off", "Pierce the Veil"],
+            "hobbies": ["art", "video games", "tabletop games", "card games"],
+            "Favorite Video Game" : "Minecraft",
+            "Favorite Website" : "YouTube"
+        }
+        console.log(person)
+        console.log(person.age)
+        
+        let elem = document.createElement('h3')
+        //elem.innerHTML = person.firstName
+        document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.classList.add('shortText')
+    elem.innerHTML = `<h3>Name</h3>
+        ${person.firstName}
+        ${person.lastName} `
+    document.body.appendChild(elem)
+    
+     elem = document.createElement('div')
+    elem.innerHTML = `<h3>Age</h3>
+        ${person.age}`
+    document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.innerHTML = `<h3>Favorite Color</h3>
+        ${person["Favorite Color"]}`
+    document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.innerHTML = `<h3>Siblings</h3>
+        ${person.siblings}`
+    document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.innerHTML = `<h3>Favorite Musical Artists</h3>
+        ${person["Favorite Musical Artists"]}`
+    document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.innerHTML = `<h3>Hobbies</h3>
+        ${person.hobbies}`
+    document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.innerHTML = `<h3>Favorite Video Game</h3>
+        ${person["Favorite Video Game"]}`
+    document.body.appendChild(elem)
+    
+    elem = document.createElement('div')
+    elem.innerHTML = `<h3>Favorite Webstie</h3>
+        ${person["Favorite Website"]}`
+    document.body.appendChild(elem)
+    
+    
+    //get a reference to the elements on page
+    let divs = document.querySelectorAll('div');
+   
+    for (let i = 0; i < divs.length; i++) {
+        let div = divs[i];
+        div.addEventListener('click',handleClick);
+    }    
+    
+      function handleClick(event) {
+//        if ( body.background.color = "black"){
+//        event.target.style.backgroundColor = "darkgrey";
+        event.target.classList.toggle('clicked')
+//        }
+//    else if ( body.background.color = "darkgrey"){
+//        event.target.style.backgroundColor = "black";
+//    }
+    }
+    
+    document.querySelector("#sad").addEventListener('click', handleImageClick)
+    
+    function handleImageClick(event){
+        if (event.target.width == 200)
+            event.target.width = 50
+        else
+            event.target.width = 200
+    }
+        
+    
+    
+    </script>
+           </div>
+    <img src = "wah.jpg" width = 800> 
+   
+</body>
+</html>
